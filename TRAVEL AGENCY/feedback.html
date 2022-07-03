@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="icon" href="Live to explore.png" type="image/icon type">
+    <style>
+:root{
+  --orange:#ffa500;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+  background-color: rgb(4, 5, 70);
+}
+
+
+
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 40px;
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+
+.contact .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.contact .row .image{
+  flex:1 1 35rem;
+}
+
+.contact .row .image img{
+  width:100%;
+}
+
+.contact .row form{
+  flex:1 1 50rem;
+  padding:2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+
+.contact .row form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .row form .inputBox input, .contact .row form textarea{
+  width:49%;
+  margin:1rem 0;
+  padding:1rem;
+  font-size: 1.7rem;
+  color:#333;
+  background:#f7f7f7;
+  text-transform: none;
+}
+
+.contact .row form textarea{
+  height: 15rem;
+  resize: none;
+  width:100%;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--orange);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+}
+
+@media (max-width:2000px){
+
+html{
+  font-size: 70%;
+} 
+
+}
+ @media (max-width:991px){
+
+header{
+  padding:2rem;
+}
+
+section{
+  padding:2rem;
+}
+} 
+
+.button3 button{
+  background-color: rgb(231, 221, 221);
+  border-radius: 5px;
+  position: fixed;
+  width: 100px;
+  height:30px ;
+  margin: 20px;
+ 
+}
+</style>
+
+</head>
+<!-- contact section starts  -->
+<body>
+  <div class="button3">
+    <button><b><a href="main.html">Go Back </a></b></button>
+  </div>
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <!-- <div class="image">
+            <img src="UAE.jpeg" alt="">
+        </div> -->
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+
+</body>
+</html>
